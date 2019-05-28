@@ -1,2 +1,39 @@
 字符串的方法调用语法:
-对象
+对象.方法名(参数)
+
+如下假设字符串变量名为S
+1、S.isdigit()	        判断字符串中的字符是否全为数字
+  '123135'.isdigit()   #True
+  '15s123s'.isdigit()  #False
+2、S.isalpha()	        判断字符串是否全为英文字母
+3、S.islower()	        判断字符串所有字符是否全为小写英文字母
+  'abc'.islower()      #True
+  'Abc'.islower()      #False
+4、S.isupper()	        判断字符串所有字符是否全为大写英文字母
+5、S.isspace()	        判断字符串是否全为空白字符  
+  空白字符
+  是指空格,水平制表符(\t),换行符(\n)等不可见的字符
+6、S.center(width[,fill])	       将原字符串居中，左右默认填充空格
+  '**'.center(1)      #'**'
+  '**'.center(3)      #' **'
+  '**'.center(4)      #' ** '
+  '**'.center(6,'-')  #'--**--'
+7、S.count(sub[, start[,end]])	    获取一个字符串中子串的个数
+  'abcda'.count('a',0,-1)   #1
+  'abcda'.count('a')        #2
+8、S.find(sub[, start[,end]])	获取字符串中子串sub的索引,失败返回-1
+9、S.strip([chars])	返回去掉左右char字符的字符串(默认char为空白字符)
+10、S.lstrip([chars])	返回去掉左侧char字符的字符串(默认char为空白字符)
+11、S.rstrip([chars])	返回去掉右侧char字符的字符串(默认char为空白字符)
+12、S.upper()	生成将英文转换为大写的字符串
+13、S.lower()	生成将英文转换为小写的字符串
+14、S.replace(old, new[, count])	将原字符串的old用new代替，生成一个新的字符串
+  'abc'.replace('a','A')  #Abc
+  'abc'.replace('a','A',0) #abc
+15、S.startswith(prefix[, start[, end]])	返回S是否是以prefix开头，如果以prefix开头返回True,否则返回False,
+16、S.endswith(suffix[, start[, end]])	返回S是否是以suffix结尾，如果以suffix结尾返回True,否则返回False
+
+
+17、S.title()	生成每个英文单词的首字母大写字符串
+18、S.isnumeric()	判断字符串是否全为数字字符
+
