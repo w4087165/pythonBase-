@@ -1,0 +1,35 @@
+L 表示一个列表
+
+1、L.index(v [, begin[, end]])	返回对应元素的索引下标, begin为开始索引，end为结束索引,当 value 不存在时触发ValueError错误
+  L = [1,2,3]
+  L.index(1)   # 0
+  L.index(2)   # 1
+  L.index(5)   # ValueError: 5 is not in list
+
+2、L.insert(index, obj)	将某个元素插放到列表中指定的位置
+  L = [1,2,3]
+  L.insert(0,0)  #[0,1,2,3]
+  L.insert(3,5)  #[0,1,2,5,3]
+3、L.count(x)	返回列表中元素的个数
+  L = [1,2,3,2]
+  L.count(2)  #2
+4、L.remove(x)	从列表中删除第一次出现在列表中的值
+  L = [1,2,3,2]
+  L.remove(2)  #[1,3,2]
+5、L.copy()	复制此列表（只复制一层，不会复制深层对象)
+6、L.append(x)	向列表中追加单个元素
+7、L.extend(lst)	向列表追加另一个列表
+  l = [1,2]
+  l2 = [2,3,4]
+  l.extend(l2)  #[1,2,2,3,4]
+8、L.clear()	清空列表,等同于 L[:] = []
+9、L.sort(reverse=False)	将列表中的元素进行排序，默认顺序按值的小到大的顺序排列
+10、L.reverse()	列表的反转，用来改变原列表的先后顺序
+11、L.pop([index])	删除索引对应的元素，如果不加索引，默认删除最后元素，同时返回删除元素
+  L = [1,2,3,4]
+  L.pop()    #返回4  
+  L          #[1,2,3]
+ 
+  
+  
+  
