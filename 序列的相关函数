@@ -1,0 +1,16 @@
+序列相关的函数：
+	len（x） max（），min(),sum(),any(),all()  
+	any()  布尔测试，只要有一个为真，则返回真
+	all()  布尔测试，所有都为真，则返回真
+序列的构造函数：
+	str（obj）  创建字符串
+	list（iterable） 创建列表
+	tuple(iterable) 创建元组
+序列的反转函数：
+	reversed（iterable）  返回反向顺序的可迭代对象  
+  s = 'abcdef'
+  reversed(s)   #<reversed object at 0x0000009F3D2BE240> 
+  [x for x in s]   ['f', 'e', 'd', 'c', 'b', 'a']
+序列的种类：
+	字符串 str
+	列表 list
