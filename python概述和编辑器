@@ -1,0 +1,22 @@
+Python的概述
+  1.python的版本
+    python2    ##2020年停止维护
+    python3  
+  2.python的优缺点
+    1.优点
+       1  简单易学易用
+       2  开发效率高
+       3  应用领域广泛
+       4  开源
+       5  第三方库足够强大
+    2.缺点
+        运行效率相对于c/c++较低
+        
+ Pycharm代码的编辑器
+  1.常用的代码编辑器：pycharm vscode subime
+  2.常用快捷键
+    自动补齐 ：tab
+    注释/取消注释： Ctrl + /
+    回退：  Ctrl + z
+    取消回退： Ctrl + shift + z
+    同时选中多个光标： 按住左键+alt+拉动
