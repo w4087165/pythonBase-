@@ -20,3 +20,54 @@ Python的概述
     回退：  Ctrl + z
     取消回退： Ctrl + shift + z
     同时选中多个光标： 按住左键+alt+拉动
+python的官网
+  网址: https://www.python.org
+
+
+python 的运行
+python 的解释执行器的类型
+  CPython      (C语言开发,当前教学)
+  Jython       (Java开发)
+  IronPython   (.net开发)
+
+第一个python程序
+    print("hello world!")
+  执行python程序方法1:
+    python3 hello.py
+
+  执行python程序方法2:
+    1) 在.py 文件的第一行加入如下内容:
+        #! /usr/bin/python3
+    2) 为.py文件添加执行权限:
+        $ chmod +x hello.py
+    3) 将.py文件作为命名执行
+        $ ./hello.py
+
+在python交互提示模式下编写并执行代码
+  进入交互环境
+    $ python3
+  退出交互模式:
+    >>> quit()
+    >>> exit()
+    >>> ctrl + d快捷键
+  
+python 的注释:
+  python 注释是以 # 开头,直至行尾
+  作用:
+    让注释内容不参加解释执行
+  
+python 程序的组成
+  程序由模块组成
+  模块由语句,函数,类等组成
+  语句包含表达式
+  表达式建立并处理数据对象
+
+python 的核心数据类型
+  数字(整数,浮点数,复数,布尔型数)
+  字符串
+  ...
+
+
+
+
+
