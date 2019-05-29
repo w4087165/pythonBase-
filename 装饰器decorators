@@ -1,0 +1,41 @@
+装饰器是一个函数，主要作用是用来包装另一个函数或类
+	作用：
+		在不修改被装饰函数的源代码，不改变其装饰函数的调用方法的情况下
+		添加或改变原函数的功能
+	语法：
+		def 装饰器函数名（fn）：
+			语句块
+		return 函数对象
+	@装饰器函数名<换行>
+	def 被装饰函数名（）：
+		语句块
+	def deco(func):
+    
+    def fx(s):
+        print("+++++++++++")
+        func(s)
+        print("-----------")
+    return fx
+
+	s = input("")
+	@deco
+	def myfunc(s):
+		print("myfunc被调用%s"%s)
+	myfunc(s)
+ 
+ 
+ 
+ 
+ 
+ def fx(s):
+    def fs(*args):
+
+        print("asdfsadfsa")
+        s(*args)
+        print("sdfadsf")
+    return fs
+@fx
+def fun(a,b,c):
+    print("fun",a,b,c)
+
+fun(1,2,3)
